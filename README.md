@@ -1,5 +1,3 @@
-<div align="center">
-  
 # Discord Folder Icon Theme
 Discord theme to replace the default server folder look with custom emojis.
 
