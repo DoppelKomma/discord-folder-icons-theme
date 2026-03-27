@@ -7,12 +7,12 @@ A small Discord theme to change the server folders to a custom emoji icon and co
 ---
 
 ## Installation
+
 I only tested it with Vencord, but it should work with any client that supports theme files.
+[![Download](https://img.shields.io/badge/Download-theme-5865F2?style=for-the-badge)](https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css)
 1. Download the theme file.
 2. Paste or drag it into your theme folder.
 
-### Install through link
-https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css
 
 ## Setup
 
@@ -30,4 +30,3 @@ Open the `folder-icons.theme.css` file and edit the two sections at the top:
     --badge-border: 2px;         /* red unread counter ring thickness */
 }
 ```
-
