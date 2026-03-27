@@ -1,6 +1,7 @@
 # Discord Folder Icon Theme
 
-<img width="62" height="207" alt="image" src="https://github.com/user-attachments/assets/bfca404d-d683-4dd8-bdc3-ac7ca4ac61a8" />
+<img width="109" height="261" alt="image" src="https://github.com/user-attachments/assets/1c32fbaa-262d-4b69-a4d7-1835ce7d69d9" />
+
 
 A small Discord theme to change the server folders to a custom emoji icon and color.
 
