@@ -1,16 +1,13 @@
 # Discord Folder Icon Theme
 
-<img width="62" height="207" alt="image" src="https://github.com/user-attachments/assets/bfca404d-d683-4dd8-bdc3-ac7ca4ac61a8" />
-
-A small Discord theme to change the server folders to a custom emoji icon and color.
+<img width="62" height="207" alt="image" src="https://github.com/user-attachments/assets/bfca404d-d683-4dd8-bdc3-ac7ca4ac61a8" /> A small Discord theme to change the server folders to a custom emoji icon and color.
 
 ---
 
 ## Installation
 
 I only tested it with Vencord, but it should work with any client that supports theme files.
-[![Download](https://img.shields.io/badge/Download-theme-5865F2?style=for-the-badge)](https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css)
-1. Download the theme file.
+1. [Download the theme file](https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css).
 2. Paste or drag it into your theme folder.
 
 
