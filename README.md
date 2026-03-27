@@ -16,9 +16,13 @@ https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css
 
 ## Setup
 
-Open the `.css` file and edit the two sections at the top:
+Open the `folder-icons.theme.css` file and edit the two sections at the top:
+### Per-folder config - one line per folder, use your exact folder name:
+```css
+[data-dnd-name="My Folder"] { --icon: '🎮'; --color: #b4977c; }
+```
 
-**Global settings** — apply to all folders:
+### Aditional settings:
 ```css
 :root {
     --folder-radius: 16px;       /* corner rounding */
@@ -27,7 +31,3 @@ Open the `.css` file and edit the two sections at the top:
 }
 ```
 
-**Per-folder config** — one line per folder, use your exact folder name:
-```css
-[data-dnd-name="My Folder"] { --icon: '🎮'; --color: #b4977c; }
-```
