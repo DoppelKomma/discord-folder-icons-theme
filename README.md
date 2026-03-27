@@ -12,7 +12,7 @@ I only tested it with Vencord, but it should work with any client that supports 
 2. Paste or drag it into your theme folder.
 
 ### Install through link
-
+https://DoppelKomma.github.io/discord-folder-icons-theme/folder-icons.theme.css
 
 ## Setup
 
