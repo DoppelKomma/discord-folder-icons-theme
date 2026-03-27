@@ -10,7 +10,7 @@ A small Discord theme to change the server folders to a custom emoji icon and co
 ## Installation
 
 I only tested it with Vencord, but it should work with any client that supports theme files.
-1. [Download the theme file](https://raw.githubusercontent.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css).
+1. [Download the theme file](https://raw.githubusercontent.com/DoppelKomma/discord-folder-icons-theme/main/folder-icons.theme.css).
 2. Move it into your theme folder.
 	- For Vencord go to: Discord -> Settings -> Themes -> Open Themes Folder
 
