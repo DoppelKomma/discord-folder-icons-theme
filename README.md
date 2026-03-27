@@ -10,24 +10,39 @@ A small Discord theme to change the server folders to a custom emoji icon and co
 
 I only tested it with Vencord, but it should work with any client that supports theme files.
 1. [Download the theme file](https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css). (Download button on the top right)
-2. Paste or drag it into your theme folder.
+2. Move it into your theme folder.
 
 
 
 ## Setup
 
-Open the `folder-icons.theme.css` file and edit the two sections at the top:
+Open the `folder-icons.theme.css` file and edit the the FOLDERS section:
+
+
 ### Per-folder config
-One line per folder, use your exact folder name and customize the icon and background color:
+
+- One line per folder
+- Replace Folder Name with your exact folder name
+- Customize the icon and background color
 ```css
-[data-dnd-name="My Folder"] { --icon: '🎮'; --color: #b4977c; }
+/* ══════════════════════════════════════════════
+   FOLDERS — one line per folder
+   ══════════════════════════════════════════════ */
+[data-dnd-name="My Folder"]	{ --icon: '❤️'; --color: #8578b4; }
+[data-dnd-name="Games"]		{ --icon: '🎮'; --color: #b4977c; }
 ```
 
+
 ### Aditional settings:
+
+To change emoji size:
 ```css
+/* ══════════════════════════════════════════════
+   ADDITIONAL SETTINGS
+   ══════════════════════════════════════════════ */
 :root {
-    --folder-radius: 16px;       /* corner rounding */
     --folder-emoji-size: 30px;   /* emoji size */
+    --folder-radius: 16px;       /* corner rounding */
     --badge-border: 2px;         /* red unread counter ring thickness */
 }
 ```
