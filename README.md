@@ -4,19 +4,20 @@
 
 A small Discord theme to change the server folders to a custom emoji icon and color.
 
-
+<br>
 
 ## Installation
 
 I only tested it with Vencord, but it should work with any client that supports theme files.
-1. [Download the theme file](https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css). (Download button on the top right)
+1. [Download the theme file](https://raw.githubusercontent.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css).
 2. Move it into your theme folder.
+	- For Vencord go to: Discord -> Settings -> Themes -> Open Themes Folder
 
 
 
 ## Setup
 
-Open the `folder-icons.theme.css` file and edit the the FOLDERS section:
+Open the `folder-icons.theme.css` file and edit the FOLDERS section:
 
 
 ### Per-folder config
@@ -33,9 +34,9 @@ Open the `folder-icons.theme.css` file and edit the the FOLDERS section:
 ```
 
 
-### Aditional settings:
+### Additional settings:
 
-To change emoji size:
+To change emoji size, corner rounding and badge border:
 ```css
 /* ══════════════════════════════════════════════
    ADDITIONAL SETTINGS
