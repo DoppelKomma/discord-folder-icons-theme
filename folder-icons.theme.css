@@ -1,0 +1,59 @@
+/**
+ * @name Folder Icons
+ * @description Custom emoji icons for server folders
+ * @version 1.0.0
+ * @author Komma
+ * @source https://github.com/DoppelKomma/Discord-Folder-Icon-Theme
+ */
+
+/* ══════════════════════════════════════════════
+   SETTINGS
+   ══════════════════════════════════════════════ */
+:root {
+  --folder-radius:     16px;    /* icon corner rounding (50% for circles) */
+  --folder-emoji-size: 30px;    /* emoji size inside the icon */
+  --badge-border:      2px;     /* red unread counter ring thickness */
+}
+
+/* ══════════════════════════════════════════════
+   CONFIGURATION — one line per folder
+   ══════════════════════════════════════════════ */
+[data-dnd-name="Application Specific"]  { --icon: '💻'; --color: #74479e; }
+[data-dnd-name="BetterDiscord"]         { --icon: '✨'; --color: #8974b9; }
+[data-dnd-name="Bot"]                   { --icon: '🤖'; --color: #b97474; }
+[data-dnd-name="Communitys"]            { --icon: '👨🏻‍❤️‍👨🏻'; --color: #45884b; }
+[data-dnd-name="Discord"]               { --icon: '☎️'; --color: #8974b9; }
+[data-dnd-name="Emotes"]                { --icon: '😎'; --color: #8974b9; }
+[data-dnd-name="Games"]                 { --icon: '🎮'; --color: #b4977c; }
+[data-dnd-name="Soundboard"]            { --icon: '🎵'; --color: #8ca174; }
+[data-dnd-name="Tags"]                  { --icon: '🏷️'; --color: #7498b9; }
+[data-dnd-name="Topics / Products"]     { --icon: '🖱️'; --color: #345ca5; }
+
+/* ══════════════════════════════════════════════
+   CORE THEME — no need to edit below
+   ══════════════════════════════════════════════ */
+[class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"] {
+  position: relative !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+[class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"]::after {
+  content: var(--icon, none);
+  background: var(--color, transparent);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--folder-emoji-size);
+  border-radius: var(--folder-radius);
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+[class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {
+  box-shadow: 0 0 0 var(--badge-border) var(--background-base-lower) !important;
+  z-index: 2 !important;
+}
