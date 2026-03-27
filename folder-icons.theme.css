@@ -18,16 +18,9 @@
 /* ══════════════════════════════════════════════
    CONFIGURATION — one line per folder
    ══════════════════════════════════════════════ */
-[data-dnd-name="Application Specific"]  { --icon: '💻'; --color: #74479e; }
-[data-dnd-name="BetterDiscord"]         { --icon: '✨'; --color: #8974b9; }
-[data-dnd-name="Bot"]                   { --icon: '🤖'; --color: #b97474; }
-[data-dnd-name="Communitys"]            { --icon: '👨🏻‍❤️‍👨🏻'; --color: #45884b; }
-[data-dnd-name="Discord"]               { --icon: '☎️'; --color: #8974b9; }
-[data-dnd-name="Emotes"]                { --icon: '😎'; --color: #8974b9; }
-[data-dnd-name="Games"]                 { --icon: '🎮'; --color: #b4977c; }
-[data-dnd-name="Soundboard"]            { --icon: '🎵'; --color: #8ca174; }
-[data-dnd-name="Tags"]                  { --icon: '🏷️'; --color: #7498b9; }
-[data-dnd-name="Topics / Products"]     { --icon: '🖱️'; --color: #345ca5; }
+[data-dnd-name="Folder name 1"] { --icon: '🎮'; --color: #b4977c; }
+[data-dnd-name="Folder name 2"]	{ --icon: '✨'; --color: #8974b9; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; --color: #b97474; }
 
 /* ══════════════════════════════════════════════
    CORE THEME — no need to edit below
