@@ -25,15 +25,14 @@ Open the `folder-icons.theme.css` file and edit the FOLDERS section:
 
 - One line per folder
 - Replace Folder Name with your exact folder name
-- Customize the icon and background color
 ```css
 /* ══════════════════════════════════════════════
    FOLDERS — one line per folder
    ══════════════════════════════════════════════ */
-[data-dnd-name="My Folder"]	{ --icon: '❤️'; --color: #8578b4; }
-[data-dnd-name="Games"]		{ --icon: '🎮'; --color: #b4977c; }
+[data-dnd-name="My Folder"]	{ --icon: '❤️'; }
+[data-dnd-name="Games"]		{ --icon: '🎮'; }
 ```
-
+You can change the background color in Discord. If it's set to default, the background will be transparent.
 
 ### Additional settings:
 

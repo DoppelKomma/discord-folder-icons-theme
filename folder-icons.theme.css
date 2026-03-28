@@ -19,9 +19,9 @@
 /* ══════════════════════════════════════════════
    FOLDERS — one line per folder
    ══════════════════════════════════════════════ */
-[data-dnd-name="Folder name 1"] { --icon: '🎮'; --color: #b4977c; }
-[data-dnd-name="Folder name 2"]	{ --icon: '✨'; --color: #8974b9; }
-[data-dnd-name="Folder name 3"] { --icon: '🤖'; --color: #b97474; }
+[data-dnd-name="Folder name 1"] { --icon: '🎮'; }
+[data-dnd-name="Folder name 2"]	{ --icon: '✨'; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; }
 
 /* ══════════════════════════════════════════════
    CORE THEME — no need to edit below
@@ -34,7 +34,7 @@
 
 [class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"]::after {
   content: var(--icon, none);
-  background: var(--color, transparent);
+  background: var(--color, var(--custom-folder-color, transparent));
   position: absolute;
   inset: 0;
   display: flex;
