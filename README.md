@@ -3,7 +3,7 @@
 <img width="109" height="261" alt="image" src="https://github.com/user-attachments/assets/1c32fbaa-262d-4b69-a4d7-1835ce7d69d9" />
 
 
-A small Discord theme to change the server folders to a custom emoji icon and color.
+A small Discord theme to change the server folders to a custom emoji icon.
 
 <br>
 
