@@ -10,7 +10,7 @@ A small Discord theme to change the server folders to a custom emoji icon and co
 ## Installation
 
 I only tested it with Vencord, but it should work with any client that supports theme files.
-1. Download the [theme file](https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css) — click the `Download raw file` button (`↓`) in the top right of the file view.
+1. Download the [theme file](https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css) — click the  `↓` `(Download raw file)` button in the top right of the file view.
 2. Move it into your theme folder.
 	- For Vencord go to: Discord -> Settings -> Themes -> Open Themes Folder
 
@@ -18,7 +18,7 @@ I only tested it with Vencord, but it should work with any client that supports 
 
 ## Setup
 
-Open the `folder-icons.theme.css` file and edit the FOLDERS section:
+Open the `folder-icons.theme.css` file and edit the `FOLDERS` section:
 
 
 ### Per-folder config
@@ -29,10 +29,10 @@ Open the `folder-icons.theme.css` file and edit the FOLDERS section:
 /* ══════════════════════════════════════════════
    FOLDERS — one line per folder
    ══════════════════════════════════════════════ */
-[data-dnd-name="My Folder"]	{ --icon: '❤️'; }
-[data-dnd-name="Games"]		{ --icon: '🎮'; }
+[data-dnd-name="Folder name"]	{ --icon: '❤️'; }
+[data-dnd-name="Games"]			{ --icon: '🎮'; }
 ```
-You can change the background color in Discord. If it's set to default, the background will be transparent.
+You can change the background color in Discord. **If it's set to default, the background will be transparent**.
 
 ### Additional settings:
 
@@ -42,8 +42,8 @@ To change emoji size, corner rounding and badge border:
    ADDITIONAL SETTINGS
    ══════════════════════════════════════════════ */
 :root {
-    --folder-emoji-size: 30px;   /* emoji size */
-    --folder-radius: 16px;       /* corner rounding */
-    --badge-border: 2px;         /* red unread counter ring thickness */
+  --folder-emoji-size: 30px;    /* emoji size */
+  --folder-radius:     16px;    /* background corner rounding (default 16px) */
+  --badge-border:      2px;     /* red unread counter ring thickness (default 2px) */
 }
 ```
