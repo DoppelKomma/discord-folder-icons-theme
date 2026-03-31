@@ -11,9 +11,9 @@
    ADDITIONAL SETTINGS
    ══════════════════════════════════════════════ */
 :root {
-	--folder-emoji-size: 30px;    /* emoji size inside the icon */
-  --folder-radius:     16px;    /* icon corner rounding (50% for circles) */
-  --badge-border:      2px;     /* red unread counter ring thickness */
+	--folder-emoji-size: 30px;    /* emoji size */
+  --folder-radius:     16px;    /* background corner rounding (default 16px) */
+  --badge-border:      2px;     /* red unread counter ring thickness (default 2px) */
 }
 
 /* ══════════════════════════════════════════════
@@ -26,28 +26,20 @@
 /* ══════════════════════════════════════════════
    CORE THEME — no need to edit below
    ══════════════════════════════════════════════ */
-[class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"] {
-  position: relative !important;
-  width: 48px !important;
-  height: 48px !important;
-}
-
 [class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"]::after {
   content: var(--icon, none);
-  background: var(--color, var(--custom-folder-color, transparent));
+  background: var(--custom-folder-color, transparent); /* use folder background color set in discord */
+  font-size: var(--folder-emoji-size);
+  border-radius: var(--folder-radius);
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--folder-emoji-size);
-  border-radius: var(--folder-radius);
   pointer-events: none;
-  z-index: 1;
   user-select: none;
 }
 
 [class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {
-  box-shadow: 0 0 0 var(--badge-border) var(--background-base-lower) !important;
-  z-index: 2 !important;
+  box-shadow: 0 0 0 var(--badge-border) var(--background-base-lower); /* restore border around unread badge */
 }
