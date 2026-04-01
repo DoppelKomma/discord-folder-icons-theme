@@ -13,7 +13,7 @@
    ADDITIONAL SETTINGS
    ══════════════════════════════════════════════ */
 :root {
-	--folder-emoji-size: 30px;    /* emoji size */
+  --folder-emoji-size: 30px;    /* emoji size */
   --folder-radius:     16px;    /* background corner rounding (default 16px) */
   --badge-border:      2px;     /* red unread counter ring thickness (default 2px) */
 }
