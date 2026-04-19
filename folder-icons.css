@@ -15,6 +15,10 @@
   user-select: none;
 }
 
+[class*="folderHeader"][data-dnd-name] [role="treeitem"][aria-expanded="true"] > [aria-hidden="true"]::after {
+  content: var(--open-icon, var(--icon, none)); /* use open icon if set, otherwise fall back to discord default */
+}
+
 [class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {
   box-shadow: 0 0 0 var(--badge-border) var(--background-base-lower); /* restore border around unread badge */
 }
