@@ -16,7 +16,7 @@
 }
 
 [class*="folderHeader"][data-dnd-name] [role="treeitem"][aria-expanded="true"] > [aria-hidden="true"]::after {
-  content: var(--open-icon, var(--icon, none)); /* use open icon if set, otherwise fall back to discord default */
+  content: var(--open-icon, var(--icon, none)); /* remove custom emoji for open folders */
 }
 
 [class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {

@@ -14,12 +14,11 @@ I only tested it with Vencord, but it should work with any client that supports 
 2. Move it into your theme folder.
 	- For Vencord go to: Discord -> Settings -> Themes -> Open Themes Folder
 
-
+Alternativly you can copy the content of [folder-icon.themes.css](https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css) and add it to quick css, but make sure the `@import` is at the top of the file.
 
 ## Setup
 
 Open the `folder-icons.theme.css` file and edit the `FOLDERS` section:
-
 
 ### Per-folder config
 
@@ -44,6 +43,7 @@ To change emoji size, corner rounding and badge border:
 :root {
   --folder-emoji-size: 30px;    /* emoji size */
   --folder-radius:     16px;    /* background corner rounding (default 16px) */
-  --badge-border:      2px;     /* red unread counter ring thickness (default 2px) */
+  --badge-border:      2px;     /* ring thickness around red unread counter (default 2px) */
+  --open-icon:         none;    /* none = discord default open folder, remove to keep custom icon or set custom open emoji like '📂' */
 }
 ```

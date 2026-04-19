@@ -15,7 +15,7 @@
 :root {
   --folder-emoji-size: 30px;    /* emoji size */
   --folder-radius:     16px;    /* background corner rounding (default 16px) */
-  --badge-border:      2px;     /* red unread counter ring thickness (default 2px) */
+  --badge-border:      2px;     /* ring thickness around red unread counter (default 2px) */
   --open-icon:         none;    /* 'none' = discord default open folder, remove to keep custom icon or set custom open emoji like '📂' */
 }
 
