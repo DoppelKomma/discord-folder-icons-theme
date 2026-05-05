@@ -1,9 +1,14 @@
 /* ══════════════════════════════════════════════
    CORE THEME — no need to edit below
    ══════════════════════════════════════════════ */
+[class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"] {
+  visibility: var(--default-icon, visible); /* hide default folder icon if emoji is set */
+}
+
 [class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"]::after {
+  visibility: visible;
   content: var(--icon, none);
-  background: var(--custom-folder-color, transparent); /* use folder background color set in discord */
+  background: color-mix(in srgb, var(--custom-folder-color, transparent) 35%, transparent); /* use folder background color set in discord */
   font-size: var(--folder-emoji-size);
   border-radius: var(--folder-radius);
   position: absolute;
@@ -15,8 +20,12 @@
   user-select: none;
 }
 
+/* Open folder ability to remove custom emoji*/
+[class*="folderHeader"][data-dnd-name] [role="treeitem"][aria-expanded="true"] > [aria-hidden="true"] {
+  visibility: visible;
+}
 [class*="folderHeader"][data-dnd-name] [role="treeitem"][aria-expanded="true"] > [aria-hidden="true"]::after {
-  content: var(--open-icon, var(--icon, none)); /* remove custom emoji for open folders */
+  content: var(--open-icon, var(--icon, none));
 }
 
 [class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {

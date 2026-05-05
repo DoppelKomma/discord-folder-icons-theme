@@ -22,6 +22,6 @@
 /* ══════════════════════════════════════════════
    FOLDERS — one line per folder
    ══════════════════════════════════════════════ */
-[data-dnd-name="Folder name 1"] { --icon: '🎮'; }
-[data-dnd-name="Folder name 2"]	{ --icon: '✨'; }
-[data-dnd-name="Folder name 3"] { --icon: '🤖'; }
+[data-dnd-name="Folder name 1"] { --icon: '🎮'; --default-icon: hidden; }
+[data-dnd-name="Folder name 2"] { --icon: '✨'; --default-icon: hidden; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; --default-icon: hidden; }
