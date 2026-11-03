@@ -1,4 +1,4 @@
-# Discord Folder Icon Theme
+# Discord Folder Icons Theme
 
 <img width="109" height="261" alt="image" src="https://github.com/user-attachments/assets/1c32fbaa-262d-4b69-a4d7-1835ce7d69d9" />
 
