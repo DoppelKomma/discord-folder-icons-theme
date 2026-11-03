@@ -30,20 +30,20 @@ Open the `folder-icons.theme.css` file and edit the `FOLDERS` section:
    ══════════════════════════════════════════════ */
 [data-dnd-name="Folder name"]	{ --icon: '❤️'; }
 [data-dnd-name="Games"]			{ --icon: '🎮'; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; --open-icon: '📂'; } /* Custom open icon can be set (optional) */
 ```
-You can change the background color in Discord. **If it's set to default, the background will be transparent**.
+You can change the background color in Discord.
 
 ### Additional settings:
 
-To change emoji size, corner rounding and badge border:
+To change emoji size, folder background tint or how open folders should be handled:
 ```css
 /* ══════════════════════════════════════════════
    ADDITIONAL SETTINGS
    ══════════════════════════════════════════════ */
 :root {
   --folder-emoji-size: 30px;    /* emoji size */
-  --folder-radius:     16px;    /* background corner rounding (default 16px) */
-  --badge-border:      2px;     /* ring thickness around red unread counter (default 2px) */
-  --open-icon:         none;    /* none = discord default open folder, remove to keep custom icon or set custom open emoji like '📂' */
+  --folder-tint:       35%;     /* folder color strength behind the emoji */
+  --open-icon:         none;    /* none = discord default open folder; keep = keep custom icon; or set custom open emoji like '📂' */
 }
 ```

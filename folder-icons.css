@@ -1,24 +1,47 @@
 /* ══════════════════════════════════════════════
    CORE THEME — no need to edit below
    ══════════════════════════════════════════════ */
-[class*="folderHeader"][data-dnd-name] [role="treeitem"] > [aria-hidden="true"]::after {
-  content: var(--icon, none);
-  background: var(--custom-folder-color, transparent); /* use folder background color set in discord */
-  font-size: var(--folder-emoji-size);
-  border-radius: var(--folder-radius);
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  user-select: none;
+
+/* only change where something custom is set */
+@property --icon      { syntax: '<string> | none';        inherits: true; initial-value: none; }
+@property --open-icon { syntax: '<string> | none | keep'; inherits: true; initial-value: none; }
+
+/* set custom folder */
+:is([class*="folderButtonInner"], [data-dnd-name] [aria-expanded] foreignObject > div) {
+  &::before {
+    content: var(--icon);
+    background: color-mix(in srgb, var(--custom-folder-color) var(--folder-tint, 35%), transparent); /* use folder background color set in discord */
+    font-size: var(--folder-emoji-size);
+    line-height: 1;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  /* no folder color set in discord: use discord's default folder background */
+  @container not style(--custom-folder-color) {
+    &::before { background: var(--background-mod-subtle); }
+    .custom-theme-background &::before { background: var(--background-mod-strong); }
+  }
+
+  /* hide default folder icon if emoji is set */
+  @container not style(--icon: none) {
+    & > :is([class*="folderButtonContent"], [aria-hidden="true"]) { visibility: hidden; }
+  }
 }
 
-[class*="folderHeader"][data-dnd-name] [role="treeitem"][aria-expanded="true"] > [aria-hidden="true"]::after {
-  content: var(--open-icon, var(--icon, none)); /* remove custom emoji for open folders */
-}
-
-[class*="folderHeader"][data-dnd-name] [class*="numberBadge"] {
-  box-shadow: 0 0 0 var(--badge-border) var(--background-base-lower); /* restore border around unread badge */
+/* open folder */
+[data-dnd-name] [aria-expanded="true"] :is([class*="folderButtonInner"], foreignObject > div) {
+  /* none (discord default) */
+  @container style(--open-icon: none) {
+    & > :is([class*="folderButtonContent"], [aria-hidden="true"]) { visibility: visible; }
+    &::before { content: none; }
+  }
+  /* custom emoji */
+  @container (not style(--icon: none)) and (not style(--open-icon: none)) and (not style(--open-icon: keep)) {
+    &::before { content: var(--open-icon); }
+  }
 }

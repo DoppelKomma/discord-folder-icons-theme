@@ -1,7 +1,7 @@
 /**
  * @name Folder Icons
  * @description Custom emoji icons for server folders
- * @version 1.0.0
+ * @version 2.0.0
  * @author Komma
  * @website https://github.com/DoppelKomma/discord-folder-icons-theme
  * @source https://github.com/DoppelKomma/discord-folder-icons-theme/blob/main/folder-icons.theme.css
@@ -13,15 +13,14 @@
    ADDITIONAL SETTINGS
    ══════════════════════════════════════════════ */
 :root {
-  --folder-emoji-size: 30px;    /* emoji size */
-  --folder-radius:     16px;    /* background corner rounding (default 16px) */
-  --badge-border:      2px;     /* ring thickness around red unread counter (default 2px) */
-  --open-icon:         none;    /* 'none' = discord default open folder, remove to keep custom icon or set custom open emoji like '📂' */
+  --folder-emoji-size: 30px; /* emoji size */
+  --folder-tint:       35%;  /* folder color strength behind the emoji */
+  --open-icon:         none; /* none = discord regular open folder; keep = keep custom emoji; or custom emoji like '📂' */
 }
 
 /* ══════════════════════════════════════════════
    FOLDERS — one line per folder
    ══════════════════════════════════════════════ */
 [data-dnd-name="Folder name 1"] { --icon: '🎮'; }
-[data-dnd-name="Folder name 2"]	{ --icon: '✨'; }
-[data-dnd-name="Folder name 3"] { --icon: '🤖'; }
+[data-dnd-name="Folder name 2"] { --icon: '✨'; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; --open-icon: '📂'; } /* Custom open icon can be set (optional) */
