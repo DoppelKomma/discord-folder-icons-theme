@@ -10,7 +10,7 @@
 :is([class*="folderButtonInner"], [data-dnd-name] [aria-expanded] foreignObject > div) {
   &::before {
     content: var(--icon);
-    background: color-mix(in srgb, var(--custom-folder-color) var(--folder-tint), transparent); /* use folder background color set in discord */
+    background: color-mix(in srgb, var(--custom-folder-color) var(--folder-tint, 35%), transparent); /* use folder background color set in discord */
     font-size: var(--folder-emoji-size);
     line-height: 1;
     position: absolute;
