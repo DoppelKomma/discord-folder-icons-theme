@@ -30,6 +30,7 @@ Open the `folder-icons.theme.css` file and edit the `FOLDERS` section:
    ══════════════════════════════════════════════ */
 [data-dnd-name="Folder name"]	{ --icon: '❤️'; }
 [data-dnd-name="Games"]			{ --icon: '🎮'; }
+[data-dnd-name="Folder name 3"] { --icon: '🤖'; --open-icon: '📂'; } /* Custom open icon can be set (optional) */
 ```
 You can change the background color in Discord.
 
